@@ -60,7 +60,7 @@ Each key is a `DiskActionInstance`:
 | field | meaning |
 |---|---|
 | `action` | static action definition (copied from the plugin manifest) |
-| `context` | `"Keypad.<position>.<key index>"` — 3 segments |
+| `context` | `"Keypad.<key position 0-31>.<action index>"` — the middle segment is the key's slot in the `keys` array; the last is 0 unless the entry is a child of a multi action. ⚠️ Getting this wrong (e.g. `Keypad.0.4` for key 4 instead of `Keypad.4.0`) half-works: presses and MIDI sends succeed, but OpenDeck looks instances up by this context for `setState`/`setImage` etc., so plugin feedback is silently dropped and the UI can misrender the key. |
 | `states` | **displayed** state(s): title text, colours, image |
 | `current_state` | index into `states` |
 | `settings` | the plugin's per-button settings (see §3) |
