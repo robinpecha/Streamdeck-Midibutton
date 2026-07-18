@@ -32,7 +32,9 @@ cmake --build build -j
 cp build/midibutton co.uk.clarionmusic.midibutton.sdPlugin/midibutton-linux
 ```
 
-Then copy the `co.uk.clarionmusic.midibutton.sdPlugin` folder into `~/.config/opendeck/plugins/` and restart OpenDeck. The MIDI layer uses the ALSA sequencer; enabling *Use virtual port* in the plugin's global settings creates a `Streamdeck MIDI` port that other applications (DAWs, mixer remote apps such as Mixing Station, etc.) can connect to.
+Then copy the `co.uk.clarionmusic.midibutton.sdPlugin` folder into `~/.config/opendeck/plugins/` (without `sudo` — the folder must stay user-owned) and restart OpenDeck. The MIDI layer uses the ALSA sequencer; enabling *Use virtual port* in the plugin's global settings creates a `Streamdeck MIDI` port that other applications (DAWs, mixer remote apps such as Mixing Station, etc.) can connect to.
+
+See **[docs/OPENDECK.md](docs/OPENDECK.md)** for a full reference aimed at humans *and* AI agents: adding buttons by editing OpenDeck profiles directly (no UI), exactly which MIDI bytes each action sends on key press/release, and how to bridge the ALSA sequencer port to applications that only see rawmidi devices (e.g. Java apps like Mixing Station).
 
 # Source code
 
