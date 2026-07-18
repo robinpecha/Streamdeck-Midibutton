@@ -191,6 +191,33 @@ The receiving app then opens the rawmidi device `VirMIDI [hw:2,0,0]`.
 Java caches its device list at startup — (re)start the receiving app *after*
 virmidi is loaded.
 
+A ready-made version of this bridge (both directions, systemd unit, install
+steps) lives in [`contrib/midi-bridge/`](../contrib/midi-bridge/).
+
+### Bidirectional: mixer state → deck key state
+
+The plugin listens on its virtual *input* port and `HandleMidiInput` updates
+toggle-type buttons from incoming MIDI: a CC matching a `cctoggle` key's
+`statusByte`+`dataByte1` sets the key to state 0 when the value equals
+`dataByte2` and state 1 when it equals `dataByte2Alt` (and the next key press
+sends the complement — the send phase stays in sync). To feed it, add the
+reverse wire (virmidi → `RtMidi Input Client`; the contrib bridge script does
+both directions).
+
+Worked Mixing Station recipe (DCA mute with true state feedback):
+
+- deck key: `cctoggle`, `statusByte` 180, `dataByte1` = CC#, `dataByte2` 127
+  (state 0 = muted, style it red), `dataByte2Alt` 0 (state 1 = unmuted).
+- MS `midiMap.json` controller: `type` 2 (Button), `eventType` 2 (CC),
+  0-based `channel`, `paramA` = CC#, actionSlots key **`momentary`** (fires
+  the action with `true` on any nonzero CC and `false` on CC 0 — no
+  press+release pairing needed, unlike `click` which requires a 127→0 pair
+  within 660 ms), action `consoleParam` with `path` `ch.<i>.mix.on`,
+  `boolMode` 0, `invertOutput` true (mute paths are inverted: on = unmuted),
+  and **`outputMode` 0** ("on value change") with `outputValue` 127 — MS then
+  emits CC 127/0 out its output port whenever the parameter changes, from any
+  source (deck, tablet, the console itself), and the deck key follows.
+
 ## 5. Verification / debugging playbook
 
 ```bash

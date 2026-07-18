@@ -251,11 +251,12 @@ void StreamDeckMidiButton::HandleMidiInput(const rtmidi::message &message)
     {
         if (mConnectionManager != nullptr)
         {
-            std::string debugMessage = "void StreamDeckMidiButton::GetMidiInput()";
+            std::string debugMessage = "void StreamDeckMidiButton::HandleMidiInput()";
             std::string logMessage;
             int nBytes;
-            
-            auto message = midiIn->get_message();
+
+            // use the message delivered by the RtMidi callback — polling
+            // get_message() here returns nothing once a callback is installed
             nBytes = message.size();
             if (nBytes > 0)
             {
@@ -278,7 +279,7 @@ void StreamDeckMidiButton::HandleMidiInput(const rtmidi::message &message)
                             if (mGlobalSettings->printDebug)
                             {
                                 debugMessage.clear();
-                                debugMessage = ("void StreamDeckMidiButton::GetMidiInput(): storedButtonSettings status byte for button " + storedButtonSettingsIterator->first + " is " + std::to_string(storedButtonSettings[storedButtonSettingsIterator->first].statusByte) + " which matches incoming status byte of " + std::to_string((int)message[0]) + " and data byte 1 of " + std::to_string((int)message[1]));
+                                debugMessage = ("void StreamDeckMidiButton::HandleMidiInput(): storedButtonSettings status byte for button " + storedButtonSettingsIterator->first + " is " + std::to_string(storedButtonSettings[storedButtonSettingsIterator->first].statusByte) + " which matches incoming status byte of " + std::to_string((int)message[0]) + " and data byte 1 of " + std::to_string((int)message[1]));
                                 Message(debugMessage);
                             }
 

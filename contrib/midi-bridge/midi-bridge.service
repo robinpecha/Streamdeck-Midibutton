@@ -1,0 +1,13 @@
+[Unit]
+Description=Bridge OpenDeck "Streamdeck MIDI" to snd-virmidi (for Mixing Station / Java MIDI apps)
+Documentation=https://github.com/robinpecha/Streamdeck-Midibutton
+After=sound.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/midi-bridge-connect.sh
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
