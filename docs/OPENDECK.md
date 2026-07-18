@@ -204,9 +204,19 @@ sends the complement — the send phase stays in sync). To feed it, add the
 reverse wire (virmidi → `RtMidi Input Client`; the contrib bridge script does
 both directions).
 
+**Status-display mode** (`"statusDisplay": true` in a `cctoggle` key's
+settings, paired with `"disable_automatic_states": true` on the action):
+the key becomes a true status indicator — its state is set *only* by incoming
+MIDI feedback, and a press sends the value of the OPPOSITE state (press a key
+showing "unmuted" → it sends the mute value). Without this, the stock
+cctoggle sends the *displayed* state's value and relies on the host
+auto-flipping the display after release, which with feedback causes a
+first-press no-op and an inverted display.
+
 Worked Mixing Station recipe (DCA mute with true state feedback):
 
-- deck key: `cctoggle`, `statusByte` 180, `dataByte1` = CC#, `dataByte2` 127
+- deck key: `cctoggle`, `statusDisplay` true (+ `disable_automatic_states`
+  true on the action), `statusByte` 180, `dataByte1` = CC#, `dataByte2` 127
   (state 0 = muted, style it red), `dataByte2Alt` 0 (state 1 = unmuted).
 - MS `midiMap.json` controller: `type` 2 (Button), `eventType` 2 (CC),
   0-based `channel`, `paramA` = CC#, actionSlots key **`momentary`** (fires

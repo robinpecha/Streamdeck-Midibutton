@@ -617,6 +617,11 @@ void StreamDeckMidiButton::StoreButtonSettings(const std::string& inAction, cons
     }
 
     //VARIOUS
+    if (inPayload["settings"].find("statusDisplay") != inPayload["settings"].end())
+    {
+        thisButtonSettings.statusDisplay = inPayload["settings"]["statusDisplay"];
+        DebugMessage("void MidiButton::StoreButtonSettings(): Setting statusDisplay to " + BoolToString(thisButtonSettings.statusDisplay));
+    }
     if (inPayload["settings"].find("toggleFade") != inPayload["settings"].end())
     {
         thisButtonSettings.toggleFade = inPayload["settings"]["toggleFade"];
@@ -925,7 +930,28 @@ void StreamDeckMidiButton::KeyDownForAction(const std::string& inAction, const s
                 if (inPayload.contains("state")) Message("void MidiButton::KeyDownForAction(): we have a state of " + std::to_string(inPayload["state"].get<int>()));
                 if (inPayload.contains("userDesiredState")) Message("void MidiButton::KeyDownForAction(): we have a userDesiredState of " + std::to_string(inPayload["userDesiredState"].get<int>()));
             }
-            if (inPayload.contains("state"))
+            if (storedButtonSettings[inContext].statusDisplay && inPayload.contains("state"))
+            {
+                // Status-display mode: the key mirrors the controlled parameter
+                // (state only ever set by incoming MIDI feedback), so a press
+                // requests the OPPOSITE of what is currently shown. State 0's
+                // value is dataByte2, state 1's is dataByte2Alt.
+                midiMessageMutex.lock();
+                midiMessage.clear();
+                midiMessage.push_back(storedButtonSettings[inContext].statusByte);
+                midiMessage.push_back(storedButtonSettings[inContext].dataByte1);
+                if (inPayload["state"].get<int>() == 0)
+                {
+                    midiMessage.push_back(storedButtonSettings[inContext].dataByte2Alt);
+                }
+                else
+                {
+                    midiMessage.push_back(storedButtonSettings[inContext].dataByte2);
+                }
+                SendMidiMessage(midiMessage);
+                midiMessageMutex.unlock();
+            }
+            else if (inPayload.contains("state"))
             {
                 if (inPayload.contains("userDesiredState"))
                 {

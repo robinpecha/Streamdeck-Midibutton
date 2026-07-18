@@ -140,7 +140,13 @@ private:
         
         //mode for CC buttons
         int ccMode = 0;
-        
+
+        //CC toggle as a status display: the key shows the CURRENT state of the
+        //controlled parameter (driven by incoming MIDI feedback via
+        //HandleMidiInput); pressing sends the OPPOSITE state's value and never
+        //changes the state locally. Pair with disable_automatic_states.
+        bool statusDisplay = false;
+
         //initial fade values - used to calculate the fade sets when necessary
         bool toggleFade = false;
         float fadeTime = 0;
