@@ -1,0 +1,294 @@
+{
+	"devices": {
+		"driverId": 0,
+		"outputPortSerialNr": "VirMIDI [hw:2,0,0]-ALSA (http://www.alsa-project.org)-6.17.0-14-generic-0",
+		"name": "Device-1",
+		"cm": {
+			"chOffset": 0,
+			"lSg": -1,
+			"SoFConfig": -3,
+			"controllers": [{
+				"uid": "midi-clock",
+				"actionSlots": {
+					"actions": {
+						"actions": []
+					},
+					"key": "main"
+				},
+				"name": "MIDI Clock",
+				"channel": 0,
+				"outputMode": 0,
+				"eventType": -1,
+				"type": -1,
+				"uuid": "6bb78e9b-cfaf-47c6-a89a-5c0492b54e6f",
+				"paramA": 0
+			},{
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": {
+							"col": -1,
+							"path": "ch.76.mix.on",
+							"lo": null,
+							"enable": true,
+							"boolMode": 0,
+							"invertOutput": true,
+							"uuid": "00000000-0000-4000-8000-0000000000a1",
+							"key": "consoleParam"
+						}
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "DCA 1 Mute",
+				"channel": 4,
+				"outputMode": 0,
+				"eventType": 2,
+				"type": 2,
+				"uuid": "00000000-0000-4000-8000-000000000001",
+				"paramA": 12
+			},{
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": {
+							"col": -1,
+							"path": "ch.77.mix.on",
+							"lo": null,
+							"enable": true,
+							"boolMode": 0,
+							"invertOutput": true,
+							"uuid": "00000000-0000-4000-8000-0000000000a2",
+							"key": "consoleParam"
+						}
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "DCA 2 Mute",
+				"channel": 4,
+				"outputMode": 0,
+				"eventType": 2,
+				"type": 2,
+				"uuid": "00000000-0000-4000-8000-000000000002",
+				"paramA": 13
+			},{
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": {
+							"col": -1,
+							"path": "ch.78.mix.on",
+							"lo": null,
+							"enable": true,
+							"boolMode": 0,
+							"invertOutput": true,
+							"uuid": "00000000-0000-4000-8000-0000000000a3",
+							"key": "consoleParam"
+						}
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "DCA 3 Mute",
+				"channel": 4,
+				"outputMode": 0,
+				"eventType": 2,
+				"type": 2,
+				"uuid": "00000000-0000-4000-8000-000000000003",
+				"paramA": 14
+			},{
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": {
+							"col": -1,
+							"path": "ch.79.mix.on",
+							"lo": null,
+							"enable": true,
+							"boolMode": 0,
+							"invertOutput": true,
+							"uuid": "00000000-0000-4000-8000-0000000000a4",
+							"key": "consoleParam"
+						}
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "DCA 4 Mute",
+				"channel": 4,
+				"outputMode": 0,
+				"eventType": 2,
+				"type": 2,
+				"uuid": "00000000-0000-4000-8000-000000000004",
+				"paramA": 15
+			},{
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": {
+							"col": -1,
+							"path": "ch.80.mix.on",
+							"lo": null,
+							"enable": true,
+							"boolMode": 0,
+							"invertOutput": true,
+							"uuid": "00000000-0000-4000-8000-0000000000a5",
+							"key": "consoleParam"
+						}
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "DCA 5 Mute",
+				"channel": 4,
+				"outputMode": 0,
+				"eventType": 2,
+				"type": 2,
+				"uuid": "00000000-0000-4000-8000-000000000005",
+				"paramA": 16
+			},{
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": {
+							"col": -1,
+							"path": "ch.81.mix.on",
+							"lo": null,
+							"enable": true,
+							"boolMode": 0,
+							"invertOutput": true,
+							"uuid": "00000000-0000-4000-8000-0000000000a6",
+							"key": "consoleParam"
+						}
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "DCA 6 Mute",
+				"channel": 4,
+				"outputMode": 0,
+				"eventType": 2,
+				"type": 2,
+				"uuid": "00000000-0000-4000-8000-000000000006",
+				"paramA": 17
+			}]
+		},
+		"id": "c280c845-7733-43b3-8a21-7cd9c113fc34",
+		"inputPortSerialNr": "VirMIDI [hw:2,0,0]-ALSA (http://www.alsa-project.org)-6.17.0-14-generic-0"
+	}
+}

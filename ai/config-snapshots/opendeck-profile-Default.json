@@ -1,0 +1,923 @@
+{
+  "infobars": [],
+  "keys": [
+    {
+      "action": {
+        "controllers": [
+          "Keypad"
+        ],
+        "disable_automatic_states": true,
+        "encoder": null,
+        "icon": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+        "name": "MIDI CC Toggle",
+        "plugin": "co.uk.clarionmusic.midibutton.sdPlugin",
+        "property_inspector": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/propertyinspector/index.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FF5050",
+            "family": "Liberation Sans",
+            "image": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+            "image_scale": 100,
+            "name": "",
+            "show": true,
+            "size": 17,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          },
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+            "image_scale": 100,
+            "name": "",
+            "show": true,
+            "size": 17,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Toggle a MIDI CC message",
+        "uuid": "uk.co.clarionmusic.midibutton.cctoggle",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.0.0",
+      "current_state": 0,
+      "settings": {
+        "ccMode": 0,
+        "dataByte1": 12,
+        "dataByte2": 127,
+        "dataByte2Alt": 0,
+        "fadeCurve": 0,
+        "fadeTime": 0,
+        "statusByte": 180,
+        "statusDisplay": true,
+        "toggleFade": false
+      },
+      "states": [
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FF5050",
+          "family": "Liberation Sans",
+          "image": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+          "image_scale": 100,
+          "name": "",
+          "show": true,
+          "size": 17,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "DCA 1",
+          "underline": false
+        },
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+          "image_scale": 100,
+          "name": "",
+          "show": true,
+          "size": 17,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "DCA 1",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad"
+        ],
+        "disable_automatic_states": true,
+        "encoder": null,
+        "icon": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+        "name": "MIDI CC Toggle",
+        "plugin": "co.uk.clarionmusic.midibutton.sdPlugin",
+        "property_inspector": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/propertyinspector/index.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FF5050",
+            "family": "Liberation Sans",
+            "image": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+            "image_scale": 100,
+            "name": "",
+            "show": true,
+            "size": 17,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          },
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+            "image_scale": 100,
+            "name": "",
+            "show": true,
+            "size": 17,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Toggle a MIDI CC message",
+        "uuid": "uk.co.clarionmusic.midibutton.cctoggle",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.1.0",
+      "current_state": 0,
+      "settings": {
+        "ccMode": 0,
+        "dataByte1": 13,
+        "dataByte2": 127,
+        "dataByte2Alt": 0,
+        "fadeCurve": 0,
+        "fadeTime": 0,
+        "statusByte": 180,
+        "statusDisplay": true,
+        "toggleFade": false
+      },
+      "states": [
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FF5050",
+          "family": "Liberation Sans",
+          "image": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+          "image_scale": 100,
+          "name": "",
+          "show": true,
+          "size": 17,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "DCA 2",
+          "underline": false
+        },
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+          "image_scale": 100,
+          "name": "",
+          "show": true,
+          "size": 17,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "DCA 2",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad"
+        ],
+        "disable_automatic_states": true,
+        "encoder": null,
+        "icon": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+        "name": "MIDI CC Toggle",
+        "plugin": "co.uk.clarionmusic.midibutton.sdPlugin",
+        "property_inspector": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/propertyinspector/index.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FF5050",
+            "family": "Liberation Sans",
+            "image": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+            "image_scale": 100,
+            "name": "",
+            "show": true,
+            "size": 17,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          },
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+            "image_scale": 100,
+            "name": "",
+            "show": true,
+            "size": 17,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Toggle a MIDI CC message",
+        "uuid": "uk.co.clarionmusic.midibutton.cctoggle",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.2.0",
+      "current_state": 0,
+      "settings": {
+        "ccMode": 0,
+        "dataByte1": 14,
+        "dataByte2": 127,
+        "dataByte2Alt": 0,
+        "fadeCurve": 0,
+        "fadeTime": 0,
+        "statusByte": 180,
+        "statusDisplay": true,
+        "toggleFade": false
+      },
+      "states": [
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FF5050",
+          "family": "Liberation Sans",
+          "image": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+          "image_scale": 100,
+          "name": "",
+          "show": true,
+          "size": 17,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "DCA 3",
+          "underline": false
+        },
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+          "image_scale": 100,
+          "name": "",
+          "show": true,
+          "size": 17,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "DCA 3",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad"
+        ],
+        "disable_automatic_states": true,
+        "encoder": null,
+        "icon": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+        "name": "MIDI CC Toggle",
+        "plugin": "co.uk.clarionmusic.midibutton.sdPlugin",
+        "property_inspector": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/propertyinspector/index.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FF5050",
+            "family": "Liberation Sans",
+            "image": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+            "image_scale": 100,
+            "name": "",
+            "show": true,
+            "size": 17,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          },
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+            "image_scale": 100,
+            "name": "",
+            "show": true,
+            "size": 17,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Toggle a MIDI CC message",
+        "uuid": "uk.co.clarionmusic.midibutton.cctoggle",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.3.0",
+      "current_state": 0,
+      "settings": {
+        "ccMode": 0,
+        "dataByte1": 15,
+        "dataByte2": 127,
+        "dataByte2Alt": 0,
+        "fadeCurve": 0,
+        "fadeTime": 0,
+        "statusByte": 180,
+        "statusDisplay": true,
+        "toggleFade": false
+      },
+      "states": [
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FF5050",
+          "family": "Liberation Sans",
+          "image": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+          "image_scale": 100,
+          "name": "",
+          "show": true,
+          "size": 17,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "DCA 4",
+          "underline": false
+        },
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+          "image_scale": 100,
+          "name": "",
+          "show": true,
+          "size": 17,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "DCA 4",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad"
+        ],
+        "disable_automatic_states": true,
+        "encoder": null,
+        "icon": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+        "name": "MIDI CC Toggle",
+        "plugin": "co.uk.clarionmusic.midibutton.sdPlugin",
+        "property_inspector": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/propertyinspector/index.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FF5050",
+            "family": "Liberation Sans",
+            "image": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+            "image_scale": 100,
+            "name": "",
+            "show": true,
+            "size": 17,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          },
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+            "image_scale": 100,
+            "name": "",
+            "show": true,
+            "size": 17,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Toggle a MIDI CC message",
+        "uuid": "uk.co.clarionmusic.midibutton.cctoggle",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.4.0",
+      "current_state": 1,
+      "settings": {
+        "ccMode": 0,
+        "dataByte1": 16,
+        "dataByte2": 127,
+        "dataByte2Alt": 0,
+        "fadeCurve": 0,
+        "fadeTime": 0,
+        "statusByte": 180,
+        "statusDisplay": true,
+        "toggleFade": false
+      },
+      "states": [
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FF5050",
+          "family": "Liberation Sans",
+          "image": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+          "image_scale": 100,
+          "name": "",
+          "show": true,
+          "size": 17,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "DCA 5",
+          "underline": false
+        },
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+          "image_scale": 100,
+          "name": "",
+          "show": true,
+          "size": 17,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "DCA 5",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad"
+        ],
+        "disable_automatic_states": true,
+        "encoder": null,
+        "icon": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+        "name": "MIDI CC Toggle",
+        "plugin": "co.uk.clarionmusic.midibutton.sdPlugin",
+        "property_inspector": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/propertyinspector/index.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FF5050",
+            "family": "Liberation Sans",
+            "image": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+            "image_scale": 100,
+            "name": "",
+            "show": true,
+            "size": 17,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          },
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+            "image_scale": 100,
+            "name": "",
+            "show": true,
+            "size": 17,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Toggle a MIDI CC message",
+        "uuid": "uk.co.clarionmusic.midibutton.cctoggle",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.5.0",
+      "current_state": 1,
+      "settings": {
+        "ccMode": 0,
+        "dataByte1": 17,
+        "dataByte2": 127,
+        "dataByte2Alt": 0,
+        "fadeCurve": 0,
+        "fadeTime": 0,
+        "statusByte": 180,
+        "statusDisplay": true,
+        "toggleFade": false
+      },
+      "states": [
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FF5050",
+          "family": "Liberation Sans",
+          "image": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+          "image_scale": 100,
+          "name": "",
+          "show": true,
+          "size": 17,
+          "stroke_colour": "#000000",
+          "stroke_size": 1,
+          "style": "Bold",
+          "text": "DCA 6",
+          "underline": false
+        },
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "plugins/co.uk.clarionmusic.midibutton.sdPlugin/midibuttoncc.png",
+          "image_scale": 100,
+          "name": "",
+          "show": true,
+          "size": 17,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "DCA 6",
+          "underline": false
+        }
+      ]
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      "action": {
+        "controllers": [
+          "Keypad",
+          "Encoder"
+        ],
+        "disable_automatic_states": false,
+        "encoder": null,
+        "icon": "plugins/me.amankhanna.oadesktopentry.sdPlugin/icon.png",
+        "name": "Focus or Launch",
+        "plugin": "me.amankhanna.oadesktopentry.sdPlugin",
+        "property_inspector": "plugins/me.amankhanna.oadesktopentry.sdPlugin/pi/focusorlaunch.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/me.amankhanna.oadesktopentry.sdPlugin/icon.png",
+            "image_scale": 100,
+            "name": "",
+            "show": true,
+            "size": 16,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Focus the application's window if it is running, otherwise launch it",
+        "uuid": "me.amankhanna.oadesktopentry.focusorlaunch",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.24.0",
+      "current_state": 0,
+      "settings": {
+        "app": "/usr/share/applications/com.anthropic.Claude.desktop"
+      },
+      "states": [
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "0.png",
+          "image_scale": 100,
+          "name": "",
+          "show": true,
+          "size": 16,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "",
+          "underline": false
+        }
+      ]
+    },
+    null,
+    {
+      "action": {
+        "controllers": [
+          "Keypad",
+          "Encoder"
+        ],
+        "disable_automatic_states": false,
+        "encoder": null,
+        "icon": "plugins/me.amankhanna.oadesktopentry.sdPlugin/icon.png",
+        "name": "Focus or Launch",
+        "plugin": "me.amankhanna.oadesktopentry.sdPlugin",
+        "property_inspector": "plugins/me.amankhanna.oadesktopentry.sdPlugin/pi/focusorlaunch.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/me.amankhanna.oadesktopentry.sdPlugin/icon.png",
+            "image_scale": 100,
+            "name": "",
+            "show": true,
+            "size": 16,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Focus the application's window if it is running, otherwise launch it",
+        "uuid": "me.amankhanna.oadesktopentry.focusorlaunch",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.26.0",
+      "current_state": 0,
+      "settings": {
+        "app": "/usr/share/applications/mixing-station-mixing-station.desktop",
+        "cycle_windows": true,
+        "match_mode": "class"
+      },
+      "states": [
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "0.png",
+          "image_scale": 100,
+          "name": "",
+          "show": true,
+          "size": 16,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "",
+          "underline": false
+        }
+      ]
+    },
+    null,
+    {
+      "action": {
+        "controllers": [
+          "Keypad",
+          "Encoder"
+        ],
+        "disable_automatic_states": false,
+        "encoder": null,
+        "icon": "plugins/me.amankhanna.oadesktopentry.sdPlugin/icon.png",
+        "name": "Focus or Launch",
+        "plugin": "me.amankhanna.oadesktopentry.sdPlugin",
+        "property_inspector": "plugins/me.amankhanna.oadesktopentry.sdPlugin/pi/focusorlaunch.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/me.amankhanna.oadesktopentry.sdPlugin/icon.png",
+            "image_scale": 100,
+            "name": "",
+            "show": true,
+            "size": 16,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Focus the application's window if it is running, otherwise launch it",
+        "uuid": "me.amankhanna.oadesktopentry.focusorlaunch",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.28.0",
+      "current_state": 0,
+      "settings": {
+        "app": "/usr/share/applications/terminator.desktop"
+      },
+      "states": [
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "0.png",
+          "image_scale": 100,
+          "name": "",
+          "show": true,
+          "size": 16,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "",
+          "underline": false
+        }
+      ]
+    },
+    null,
+    {
+      "action": {
+        "controllers": [
+          "Keypad",
+          "Encoder"
+        ],
+        "disable_automatic_states": false,
+        "encoder": null,
+        "icon": "plugins/me.amankhanna.oadesktopentry.sdPlugin/icon.png",
+        "name": "Focus or Launch",
+        "plugin": "me.amankhanna.oadesktopentry.sdPlugin",
+        "property_inspector": "plugins/me.amankhanna.oadesktopentry.sdPlugin/pi/focusorlaunch.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/me.amankhanna.oadesktopentry.sdPlugin/icon.png",
+            "image_scale": 100,
+            "name": "",
+            "show": true,
+            "size": 16,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Focus the application's window if it is running, otherwise launch it",
+        "uuid": "me.amankhanna.oadesktopentry.focusorlaunch",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.30.0",
+      "current_state": 0,
+      "settings": {
+        "app": "/usr/share/applications/vivaldi-snapshot.desktop"
+      },
+      "states": [
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "0.png",
+          "image_scale": 100,
+          "name": "",
+          "show": true,
+          "size": 16,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad",
+          "Encoder"
+        ],
+        "disable_automatic_states": false,
+        "encoder": null,
+        "icon": "plugins/me.amankhanna.oadesktopentry.sdPlugin/icon.png",
+        "name": "Launch App",
+        "plugin": "me.amankhanna.oadesktopentry.sdPlugin",
+        "property_inspector": "plugins/me.amankhanna.oadesktopentry.sdPlugin/pi/launchapp.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/me.amankhanna.oadesktopentry.sdPlugin/icon.png",
+            "image_scale": 100,
+            "name": "",
+            "show": true,
+            "size": 16,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Launch an application",
+        "uuid": "me.amankhanna.oadesktopentry.launchapp",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.31.0",
+      "current_state": 0,
+      "settings": {
+        "app": "/usr/share/applications/opendeck.desktop"
+      },
+      "states": [
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "0.png",
+          "image_scale": 100,
+          "name": "",
+          "show": true,
+          "size": 16,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "",
+          "underline": false
+        }
+      ]
+    }
+  ],
+  "sliders": []
+}
